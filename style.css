@@ -1,11 +1,11 @@
 body {
-    box-sizing:content-box;
+    box-sizing: content-box;
     background-image: url("PVZ wallpaper.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
 
- h1 {
+h1 {
     font-size: 80px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
@@ -17,13 +17,13 @@ body {
     top: 0px;
 }
 
- h5 {
+h5 {
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin: 8px;
     padding: 0;
-    top: 90px;   
+    top: 90px;
     position: sticky;
 }
 
@@ -37,7 +37,7 @@ body {
     overflow-y: auto;
 }
 
-#mommy div {
+#mommy>div {
     aspect-ratio: 1;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -65,9 +65,10 @@ body {
     text-align: center;
     margin: 15px;
     padding: 0;
-    top: 5px;   
+    top: 5px;
     position: sticky;
 }
+
 .zombies h2 {
     color: white;
     font-size: 50px;
@@ -75,9 +76,33 @@ body {
     font-weight: bold;
     text-align: center;
     margin: 15px;
+    margin-bottom: 5px;
     padding: 0;
-    top: 5px;   
+    top: 5px;
     position: sticky;
+}
+
+
+
+.plants .stats {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: calc(55% - 30px);
+    width: calc(100% - 10px);
+    margin: 0px auto;
+}
+
+.plants .stats .imgC {
+    background-color: rgb(200, 220, 20);
+    display: flex;
+    border: 5px solid rgb(20, 20, 20);
+}
+
+.plants .stats img {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
 }
 
 ::-webkit-scrollbar {
