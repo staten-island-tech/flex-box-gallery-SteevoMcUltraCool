@@ -1,6 +1,6 @@
 body {
     box-sizing: content-box;
-    background-image: url("PVZ wallpaper.jpg");
+    background-image: url("FAT/PVZ wallpaper.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -99,12 +99,45 @@ h5 {
     border: 5px solid rgb(20, 20, 20);
 }
 
-.plants .stats img {
-    width: 100%;
+.plants .stats > img {
+    width: 100px;
     justify-self: center;
     align-self: center;
 }
+.plants .stats .tbox {
+    border: 5px solid rgb(20, 20, 20);
+    border-left: 0px;
+    overflow-y: auto;
+}
+.tbox img {
+    max-height: 35px;
+    position: relative;
+    top:7px;
+    margin: 0px;
+    padding: 0px;
+}
+.Sun {
+    filter: brightness(90%)	;
+}
+.tbox .simg {
+    height: 21px;
+    width: 21px;
+}
 
+.plants .stats .tbox h4 {
+    font-weight: 900;
+    font-size: 28px;
+    margin: 0px;
+    padding: 0px;
+}
+.plants .tbox p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 4px 0px;
+    margin-bottom: 11px
+
+}
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -113,6 +146,7 @@ h5 {
     background-color: white;
     border-radius: 100px;
 }
+
 
 ::-webkit-scrollbar-thumb {
     background-color: gray;
