@@ -91,6 +91,8 @@ h5 {
     height: calc(55% - 30px);
     width: calc(100% - 10px);
     margin: 0px auto;
+    position: sticky;
+    top: 55px;
 }
 
 .plants .stats .imgC {
@@ -139,6 +141,13 @@ h5 {
     margin-bottom: 11px
 
 }
+
+.plants > p {
+    margin: 10px 0px;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+
 ::-webkit-scrollbar {
     width: 6px;
 }
