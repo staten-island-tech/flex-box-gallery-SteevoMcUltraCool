@@ -50,41 +50,61 @@ h5 {
     overflow-y: auto;
 }
 
-#mommy .plants {
-    background-color: rgb(170, 220, 20)
+#mommy > div::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 50px;
 }
+#mommy > div::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 50px;
+}
+#mommy >div::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#mommy> div::-webkit-scrollbar {
+    width: 7px;
+}
+ #mommy > div::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(lightgrey,grey)
+ }
+#mommy .plants {
+    background-color: rgb(170, 220, 20);
+
+}   
 
 #mommy .zombies {
     background-color: rgb(170, 20, 220)
 }
-
+@font-face {
+    font-family: "Static";
+    src: url("Fonts/Static.ttf");
+}
 .plants h2 {
+    color: black;
+    text-shadow: 0px 0px 3px white;
+}
+
+.plants h2, .zombies h2 {
     font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     text-align: center;
     margin: 15px;
     padding: 0;
     top: 5px;
     position: sticky;
+    font-size: 50px;
+    font-family: "Static";
 }
 
 .zombies h2 {
-    color: white;
-    font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin: 15px;
-    margin-bottom: 5px;
-    padding: 0;
-    top: 5px;
-    position: sticky;
+    color: lightgray;
+    text-shadow: 0px 0px 3px black;
 }
 
 
 
-.plants .stats {
+.stats {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
@@ -95,21 +115,30 @@ h5 {
     top: 55px;
 }
 
-.plants .stats .imgC {
+ .stats .imgC {
     background-color: rgb(200, 220, 20);
-    display: flex;
     border: 5px solid rgb(20, 20, 20);
+    overflow-y: hidden;
 }
 
-.plants .stats > img {
-    width: 100px;
+.plants .imgC {
+    background-color: rgb(200, 220, 20);
+}
+
+.zombies .imgC {
+    background-color: rgb(150, 20, 220);
+}
+.stats .imgC > img {
+    width: 100%;
     justify-self: center;
     align-self: center;
 }
+
 .plants .stats .tbox {
     border: 5px solid rgb(20, 20, 20);
     border-left: 0px;
     overflow-y: auto;
+    background-color: rgb(170, 220, 20);
 }
 .tbox img {
     max-height: 35px;
@@ -142,11 +171,20 @@ h5 {
 
 }
 
+@font-face {
+    font-family: "Lato";
+    src: url("Fonts/Lato-Black.ttf");
+}
+
 .plants > p {
     margin: 10px 0px;
     padding: 0px 10px;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: "Lato";
 }
+
+
+
 
 ::-webkit-scrollbar {
     width: 6px;
