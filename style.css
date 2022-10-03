@@ -15,6 +15,7 @@ h1 {
     padding: 0;
     position: sticky;
     top: 0px;
+    z-index: 2;
 }
 
 h5 {
@@ -25,6 +26,8 @@ h5 {
     padding: 0;
     top: 90px;
     position: sticky;
+    z-index: 2;
+
 }
 
 #mommy {
@@ -50,42 +53,49 @@ h5 {
     overflow-y: auto;
 }
 
-#mommy > div::-webkit-scrollbar-track-piece:start {
+#mommy>div::-webkit-scrollbar-track-piece:start {
     background: transparent;
     margin-top: 50px;
 }
-#mommy > div::-webkit-scrollbar-track-piece:end {
+
+#mommy>div::-webkit-scrollbar-track-piece:end {
     background: transparent;
     margin-bottom: 50px;
 }
-#mommy >div::-webkit-scrollbar-track {
+
+#mommy>div::-webkit-scrollbar-track {
     background: transparent;
 }
 
-#mommy> div::-webkit-scrollbar {
+#mommy>div::-webkit-scrollbar {
     width: 7px;
 }
- #mommy > div::-webkit-scrollbar-thumb {
-    background-image: radial-gradient(lightgrey,grey)
- }
+
+#mommy>div::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(lightgrey, grey)
+}
+
 #mommy .plants {
     background-color: rgb(170, 220, 20);
 
-}   
+}
 
 #mommy .zombies {
     background-color: rgb(170, 20, 220)
 }
+
 @font-face {
     font-family: "Static";
     src: url("Fonts/Static.ttf");
 }
+
 .plants h2 {
     color: black;
     text-shadow: 0px 0px 3px white;
 }
 
-.plants h2, .zombies h2 {
+.plants h2,
+.zombies h2 {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -115,8 +125,7 @@ h5 {
     top: 55px;
 }
 
- .stats .imgC {
-    background-color: rgb(200, 220, 20);
+.stats .imgC {
     border: 5px solid rgb(20, 20, 20);
     overflow-y: hidden;
 }
@@ -128,11 +137,8 @@ h5 {
 .zombies .imgC {
     background-color: rgb(150, 20, 220);
 }
-.stats .imgC > img {
-    width: 100%;
-    justify-self: center;
-    align-self: center;
-}
+
+
 
 .plants .stats .tbox {
     border: 5px solid rgb(20, 20, 20);
@@ -140,35 +146,64 @@ h5 {
     overflow-y: auto;
     background-color: rgb(170, 220, 20);
 }
+
+.zombies .stats .tbox {
+    border: 5px solid rgb(20, 20, 20);
+    border-left: 0px;
+    overflow-y: auto;
+    background-color: rgb(170, 20, 220);
+}
+
 .tbox img {
     max-height: 35px;
     position: relative;
-    top:7px;
+    top: 7px;
     margin: 0px;
     padding: 0px;
 }
+
 .Sun {
-    filter: brightness(90%)	;
+    filter: brightness(90%);
 }
+
 .tbox .simg {
-    top:2px;
+    top: 2px;
     height: 21px;
     width: 21px;
 }
 
-.plants .stats .tbox h4 {
+.tbox h4 {
     font-weight: 900;
     font-size: 28px;
     margin: 0px;
     padding: 0px;
 }
-.plants .tbox p {
+
+.tbox p {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 4px 0px;
     margin-bottom: 11px
+}
 
+.zombies .tbox p {
+    color: white;
+}
+
+.zombies .tbox h4 {
+    color: white
+}
+
+.stats .imgC>img {
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-start;
+    filter: none;
+}
+
+.zombies img {
+    filter: invert(99%);
 }
 
 @font-face {
@@ -176,11 +211,13 @@ h5 {
     src: url("Fonts/Lato-Black.ttf");
 }
 
-.plants > p {
+.plants>p,
+.zombies>p {
     margin: 10px 0px;
     padding: 0px 10px;
     font-size: 20px;
     font-family: "Lato";
+    text-shadow: 0px 0px 3px rgb(245, 245, 245);
 }
 
 
