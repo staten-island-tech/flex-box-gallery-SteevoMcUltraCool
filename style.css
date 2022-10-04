@@ -52,18 +52,17 @@ h5 {
     padding: 0px;
     overflow-y: auto;
 }
-
 #mommy>div::-webkit-scrollbar-track-piece:start {
     background: transparent;
-    margin-top: 50px;
+    margin-top: 32px;
 }
 
 #mommy>div::-webkit-scrollbar-track-piece:end {
     background: transparent;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
-#mommy>div::-webkit-scrollbar-track {
+#mommy div::-webkit-scrollbar-track {
     background: transparent;
 }
 
@@ -71,7 +70,7 @@ h5 {
     width: 7px;
 }
 
-#mommy>div::-webkit-scrollbar-thumb {
+#mommy div::-webkit-scrollbar-thumb {
     background-image: radial-gradient(lightgrey, grey)
 }
 
@@ -132,6 +131,7 @@ h5 {
 
 .plants .imgC {
     background-color: rgb(200, 220, 20);
+    overflow: hidden;
 }
 
 .zombies .imgC {
@@ -200,6 +200,11 @@ h5 {
     justify-self: flex-start;
     align-self: flex-start;
     filter: none;
+}
+
+.S {
+    color: red;
+    text-shadow: 1px 1px 0px black, 1px -1px 0px black, -1px 1px 0px black, -1px -1px 0px black;
 }
 
 .zombies img {
