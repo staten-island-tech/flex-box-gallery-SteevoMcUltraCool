@@ -52,7 +52,6 @@ h5 {
     padding: 0px;
     overflow-y: auto;
     transition: all 0.35s;
-    box-shadow: 10px 10px 0px black;
 }
 #mommy>div:hover {
     transform: scale(1.025);
@@ -177,6 +176,16 @@ h5 {
     top: 2px;
     height: 21px;
     width: 21px;
+}
+.TFA + .surp {
+    display:none;
+}
+.TFA:hover + .surp {
+    display: inline;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    box-shadow: 2px 2px 2px black;
 }
 
 .tbox h4 {
