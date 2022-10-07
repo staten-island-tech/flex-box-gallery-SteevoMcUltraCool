@@ -179,9 +179,12 @@ h5 {
 }
 .TFA + .surp {
     display:none;
+    transition:  all 0.2s;
+    visibility: hidden;
 }
 .TFA:hover + .surp {
     display: inline;
+    visibility: visible;
     background-color: white;
     border-radius: 4px;
     padding: 4px;
