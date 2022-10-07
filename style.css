@@ -261,3 +261,38 @@ h5 {
     background-color: gray;
     border-radius: 100px;
 }
+
+
+@media screen and (max-width:1600px) {
+    .plants h2, .zombies h2 {
+        font-size: 35px;
+    }
+
+    .plants p, .zombies p {
+        font-size: 16px;
+    }
+    .plants h4, .zombies h4 {
+        font-size: 20px;
+    }
+    .plants .stats, .zombies .stats {
+        top:45px
+    }
+    #mommy>div {
+        max-width: 43%;
+    }
+}
+@media screen and (max-width: 600px)  {
+
+    h1 {
+        font-size: 65px;
+    }
+    h5 {
+        top: 80px;
+        font-size: 25px;
+    }
+    
+    #mommy>div {
+        width:700px;
+        max-width: 95%;
+    }
+}
