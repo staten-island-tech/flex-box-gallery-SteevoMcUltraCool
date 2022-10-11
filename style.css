@@ -130,6 +130,7 @@ h5 {
     margin: 0px auto;
     position: sticky;
     top: 55px;
+    max-height: 50%;
 }
 
 .stats .imgC {
