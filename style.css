@@ -4,7 +4,17 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
+@keyframes colorRotate {
+    0% {
+        color: rgb(128, 165, 15);
+    }
+    50% {
+        color:rgb(16, 20, 220);
+    }
+    100% {
+        color: rgb(128, 165, 15);
+    }
+}
 h1 {
     font-size: 80px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -16,6 +26,7 @@ h1 {
     position: sticky;
     top: 0px;
     z-index: 2;
+    animation: colorRotate 5s ease-in-out 0s infinite forwards normal;
 }
 
 h5 {
@@ -340,3 +351,4 @@ a:hover {
 #mineIMG:hover {
     content: url("FAT/explosion\'.gif");
 }
+
