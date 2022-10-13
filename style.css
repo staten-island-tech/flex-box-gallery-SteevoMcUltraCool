@@ -166,7 +166,7 @@ h5 {
 }
 
 
-
+.tbox {overflow-x: hidden;}
 .plants .stats .tbox {
     border: 5px solid rgb(20, 20, 20);
     border-left: 0px;
@@ -187,12 +187,38 @@ h5 {
     top: 7px;
     margin: 0px;
     padding: 0px;
+    transition: all 0.4s;
+
 }
 
 .Sun {
     filter: brightness(90%);
+    transition: all 0.4s;
 }
-
+.tbox img:hover {
+    transform: scale(1.1);
+}
+.tbox .Sun:hover, .tbox .h4:hover + .Sun {
+    transform: rotate(360deg) scale(1.1);
+}
+.tbox p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 4px 0px;
+    margin-bottom: 11px;
+    transition: all 0.38s;
+}
+.tbox p:hover, .tbox h4:hover {
+    transform: scale(1.12) translate(6%, 0%) ;
+}
+.tbox h4 {
+    font-weight: 900;
+    font-size: 28px;
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.38s;
+}
 .tbox .simg {
     top: 2px;
     height: 21px;
@@ -214,20 +240,9 @@ h5 {
     box-shadow: 2px 2px 2px black;
 }
 
-.tbox h4 {
-    font-weight: 900;
-    font-size: 28px;
-    margin: 0px;
-    padding: 0px;
-}
 
-.tbox p {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 4px 0px;
-    margin-bottom: 11px
-}
+
+
 
 .zombies .tbox p {
     color: white;
