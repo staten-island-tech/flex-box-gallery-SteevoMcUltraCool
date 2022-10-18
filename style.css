@@ -231,12 +231,15 @@ h5 {
     visibility: hidden;
 }
 
+.surp > p {
+    font-size: 12px;
+}
 .TFA:hover+.surp {
     display: inline;
     visibility: visible;
     background-color: white;
-    border-radius: 4px;
-    padding: 4px;
+    border-radius: 2px;
+    padding: 2px;
     box-shadow: 2px 2px 2px black;
 }
 
